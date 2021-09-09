@@ -5,10 +5,10 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
-const OUTPUT_DIR = path.resolve(__dirname, "output")
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const src_DIR = path.resolve(__dirname, "src")
+const srcPath = path.join(src_DIR, "Main.html");
 
-const render = require("./src/page-template.js");
+const render = require("./lib/render.js");
 
 const teamMembers = [];
 const idArray = [];
@@ -238,10 +238,10 @@ function appMenu() {
 
   function buildTeam() {
     // Create the output directory if the output path doesn't exist
-    if (!fs.existsSync(OUTPUT_DIR)) {
-      fs.mkdirSync(OUTPUT_DIR)
+    if (!fs.existsSync(src_DIR)) {
+      fs.mkdirSync(src_DIR)
     }
-    fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
+    fs.writeFileSync(srcPath, render(teamMembers), "utf-8");
   }
 
   createManager();
