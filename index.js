@@ -8,7 +8,7 @@ const fs = require("fs");
 const src_DIR = path.resolve(__dirname, "src")
 const srcPath = path.join(src_DIR, "Main.html");
 
-const render = require("./lib/render.js");
+const render = require("./src/temp");
 
 const teamMembers = [];
 const idArray = [];
@@ -164,7 +164,7 @@ function appMenu() {
         }
       }
     ]).then(answers => {
-      const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
+      const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.EngineerGithub);
       teamMembers.push(engineer);
       idArray.push(answers.engineerId);
       createTeam();
