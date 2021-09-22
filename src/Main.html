@@ -8,34 +8,310 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     </head>
     <body>
-        <div class="jumbotron jumbotron-fluid bg-info text-white">
-            <div class="container">
-                <h1 class="display-3"><strong> Coding Team </strong></h1>
-            </div>
-        </div>
-        <main>
-            <div class="container">
-                <div class="row justify-content-center" id="team-cards">
-                    
-    <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header bg-secondary text-white">
-                <h2>Manager</h2>
-                <h4>y</h4>
-            </div>
-            <div class="card-body">
-                <p class="id">ID: 43</p>
-                <p class="email">Email: <a href="mailto:d@d.dom">d@d.dom</a></p>
-                <p class="officeNum">Office Number: 32</p>
-            </div>
+        <div class= "container">
+        <header>
+            <h1 class ="text-center">coding masters</h1>
+        </header>
+        <div class= "container-fluid">
+            <div class="card-deck d-flex p-8 justify-content-center">
+            
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coding Team</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class= "container">
+        <header>
+            <h1 class ="text-center">coding masters</h1>
+        </header>
+        <div class= "container-fluid">
+            <div class="card-deck d-flex p-8 justify-content-center">
+            {{ team }}
         </div>
     </div>
-    
-                </div>
-            </div>
-        </main>
-        
+        </div>
+    <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">tj</h2>
+            <h3 class="card-text"><i class="fas fa-clipboard"></i> Manager</h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: 92</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:Bop@da.com">Bop@da.com</a>
+              </li>
+              <li class="list-group-item">Office number: 95</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">tj</h2>
+            <h3 class="card-text">
+              <i class="fas fa-user-graduate mr-2"></i> Manager
+            </h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: 92</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:Bop@da.com">Bop@da.com</a>
+              </li>
+              <li class="list-group-item">School: {{ school }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">tj</h2>
+            <h3 class="card-text"><i class="fas fa-glasses"></i> Manager</h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: 92</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:Bop@da.com">Bop@da.com</a>
+              </li>
+              <li class="list-group-item">
+                GitHub:
+                <a
+                  href="https://github.com/{{ github }}"
+                  target="_blank"
+                  >{{ github }}</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </body>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </html>
+  
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coding Team</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class= "container">
+        <header>
+            <h1 class ="text-center">coding masters</h1>
+        </header>
+        <div class= "container-fluid">
+            <div class="card-deck d-flex p-8 justify-content-center">
+            {{ team }}
+        </div>
+    </div>
+        </div>
+    <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">yaboi</h2>
+            <h3 class="card-text"><i class="fas fa-clipboard"></i> Engineer</h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: 84</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:DAT@guy.com">DAT@guy.com</a>
+              </li>
+              <li class="list-group-item">Office number: {{ officeNumber }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">yaboi</h2>
+            <h3 class="card-text">
+              <i class="fas fa-user-graduate mr-2"></i> Engineer
+            </h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: 84</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:DAT@guy.com">DAT@guy.com</a>
+              </li>
+              <li class="list-group-item">School: {{ school }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">yaboi</h2>
+            <h3 class="card-text"><i class="fas fa-glasses"></i> Engineer</h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: 84</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:DAT@guy.com">DAT@guy.com</a>
+              </li>
+              <li class="list-group-item">
+                GitHub:
+                <a
+                  href="https://github.com/hiya"
+                  target="_blank"
+                  >hiya</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </body>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </html>
+  
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coding Team</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class= "container">
+        <header>
+            <h1 class ="text-center">coding masters</h1>
+        </header>
+        <div class= "container-fluid">
+            <div class="card-deck d-flex p-8 justify-content-center">
+            {{ team }}
+        </div>
+    </div>
+        </div>
+    <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">dude</h2>
+            <h3 class="card-text"><i class="fas fa-clipboard"></i> Intern</h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: 69</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:tha@dude.com">tha@dude.com</a>
+              </li>
+              <li class="list-group-item">Office number: {{ officeNumber }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">dude</h2>
+            <h3 class="card-text">
+              <i class="fas fa-user-graduate mr-2"></i> Intern
+            </h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: 69</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:tha@dude.com">tha@dude.com</a>
+              </li>
+              <li class="list-group-item">School: UNCC</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">dude</h2>
+            <h3 class="card-text"><i class="fas fa-glasses"></i> Intern</h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: 69</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:tha@dude.com">tha@dude.com</a>
+              </li>
+              <li class="list-group-item">
+                GitHub:
+                <a
+                  href="https://github.com/{{ github }}"
+                  target="_blank"
+                  >{{ github }}</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </body>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </html>
+  
+        </div>
+    </div>
+        </div>
+    <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">{{ name }}</h2>
+            <h3 class="card-text"><i class="fas fa-clipboard"></i> {{ role }}</h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: {{ id }}</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:{{ email }}">{{ email }}</a>
+              </li>
+              <li class="list-group-item">Office number: {{ officeNumber }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">{{ name }}</h2>
+            <h3 class="card-text">
+              <i class="fas fa-user-graduate mr-2"></i> {{ role }}
+            </h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: {{ id }}</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:{{ email }}">{{ email }}</a>
+              </li>
+              <li class="list-group-item">School: {{ school }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="width: 18rem">
+          <div class="card-header">
+            <h2 class="card-title">{{ name }}</h2>
+            <h3 class="card-text"><i class="fas fa-glasses"></i> {{ role }}</h3>
+            <ul class="list-group">
+              <li class="list-group-item">ID: {{ id }}</li>
+              <li class="list-group-item">
+                Email: <a href="mailto:{{ email }}">{{ email }}</a>
+              </li>
+              <li class="list-group-item">
+                GitHub:
+                <a
+                  href="https://github.com/{{ github }}"
+                  target="_blank"
+                  >{{ github }}</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </body>
+
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </html>
   
